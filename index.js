@@ -13,7 +13,7 @@ client.on('message', msg=> {
         // See if the ID is Pace's id.
         if(user.id === paceID) {
                     // If so, send "Yo pace!"
-        msg.channel.send("Yo pace!");
+        msg.channel.send("Yo Pace!");
         }
     });
 });
