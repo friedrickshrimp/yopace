@@ -7,7 +7,7 @@ client.login(process.env.DJS_TOKEN);
 // When there is a message sent...
 client.on('message', msg=> {
     // See if the message includes @Pace...
-    if(msg.content.includes("@Pace")) {
+    if(msg.content.includes("@Santa Pace")) {
         // If so, send "Yo pace!"
         msg.channel.send("Yo pace!");
     }
