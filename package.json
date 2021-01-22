@@ -1,0 +1,14 @@
+{
+  "name": "yopace",
+  "version": "1.0.0",
+  "description": "Just says Yo Pace every time Pace is tagged",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FriedrickShrimp",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
