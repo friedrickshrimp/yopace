@@ -1,9 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require('./config.json');
 
 // Stored in a sperate file so nobody can mess with the bot
-client.login(config.token);
+client.login(process.env.DJS_TOKEN);
 
 // When there is a message sent...
 client.on('message', msg=> {
