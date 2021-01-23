@@ -8,12 +8,8 @@ client.login(process.env.DJS_TOKEN);
 
 // When there is a message sent...
 client.on('message', msg=> {
-    // Look at all the mentions
-    msg.mentions.users.array().forEach((user, n) => {
-        // See if the ID is Pace's id.
-        if(user.id === paceID) {
-                    // If so, send "Yo pace!"
+    // See if the message includes <@!PACE_ID> because that's how tags work apparently
+    if(msg.content.includes("<@!" + paceID + ">")) {
         msg.channel.send("Yo Pace!");
-        }
-    });
+}
 });
