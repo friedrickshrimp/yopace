@@ -87,7 +87,9 @@ client.on('message', async (msg) => {
         
         if(msg.content.includes("<@!802168653797392414>")) {
             var emoji = client.emojis.cache.get("826563972127916092");
+                   const alarm = client.emojis.cache.get("826095842431205437")
             msg.react(emoji);
+            msg.react(alarm);
         }
 
     }
