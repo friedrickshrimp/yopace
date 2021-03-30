@@ -85,7 +85,7 @@ client.on('message', async (msg) => {
             msg.channel.send("Yo Pace!");
         }
         
-        else if(msg.content.includes("<@!802168653797392414>") && msg.content.includes("do some stuff.")) {
+        if(msg.content.includes("<@!802168653797392414>") && msg.content.includes("do some stuff.")) {
             var emoji = client.emojis.cache.get("826563972127916092");
             msg.react(emoji);
         }
