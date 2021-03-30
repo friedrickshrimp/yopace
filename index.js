@@ -81,11 +81,11 @@ client.on('message', async (msg) => {
 
 
         }
-        else if(msg.content.includes("<@!" + paceID + ">") || msg.content.includes("<@!802168653797392414>")){
+        else if(msg.content.includes("<@!" + paceID + ">")){
             msg.channel.send("Yo Pace!");
         }
         
-        if(msg.content.includes("<@!802168653797392414>") && msg.content.includes("do some stuff.")) {
+        if(msg.content.includes("<@!802168653797392414>")) {
             var emoji = client.emojis.cache.get("826563972127916092");
             msg.react(emoji);
         }
