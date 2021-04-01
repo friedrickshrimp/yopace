@@ -92,6 +92,11 @@ client.on('message', async (msg) => {
             msg.react(emoji);
             msg.react(alarm);
         }
+        
+              if(msg.author.username.includes("Escel")) {
+                 var emoji = client.emojis.cache.get("826563972127916092");
+                  msg.react(emoji);
+              }
 
     }
 });
