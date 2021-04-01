@@ -14,7 +14,8 @@ client.on('message', async (msg) => {
         && msg.channel.name != "prayer-requests"
         && msg.channel.name != "requesting-help"
         && msg.channel.name != "theology"
-        && msg.channel.name != "testimonies") {
+        && msg.channel.name != "testimonies"
+       && msg.channel.name != "bible-study-chat") {
         var date = new Date();
 
         // See if the message includes <@!PACE_ID> because that's how tags work apparently
