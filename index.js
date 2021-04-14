@@ -83,7 +83,7 @@ client.on('message', async (msg) => {
 
         }
         else if(msg.content.includes("<@!" + paceID + ">")){
-            msg.channel.send("Yo Pace!");
+            msg.channel.send("Yo Pacerino!");
         }
         
         if(msg.content.includes("<@!802168653797392414>")) {
