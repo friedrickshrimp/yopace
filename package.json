@@ -9,6 +9,9 @@
   "author": "FriedrickShrimp",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "mw-dictionary": "0.0.5",
+    "request": "^2.88.2",
+    "xml2js": "^0.4.23"
   }
 }
