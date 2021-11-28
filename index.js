@@ -8,6 +8,22 @@ const paceID = process.env.PACE_ID;
 // Stored in a sperate file so nobody can mess with the bot
 client.login(process.env.DJS_TOKEN);
 
+
+client.on('ready', () => {
+const guild = client.guilds.cache.get(721442403919331409);
+var commands;
+     if(guild) {
+          commands = guild.commands;
+     }
+     else {
+     commands = client.application?.commands;
+     }
+     
+commands?.create({
+name: "define",
+     description: "Defines a keyword according to the MW dictionary"
+});
+});
 // When there is a message sent...
 client.on('message', async (msg) => {
 
