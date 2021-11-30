@@ -64,6 +64,15 @@ client.on('interactionCreate', async (interaction) => {
             });
             return;
         }
+        
+          if(word === "loved") {
+            interaction.reply({
+                content: "See the definition of \'loved\' below: \n You. God loves you. His love never fails.",
+                ephemeral: ephemeralvar
+            });
+            return;
+        }
+        
         getDefinition(word, (result, e) => {
 
 
