@@ -112,7 +112,7 @@ client.on('interactionCreate', async (interaction) => {
     
     if(commandName === "coinflip") {
         const randNum = Math.random() * 10;
-        const coin = (randNum % 2 == 0);
+        const coin =  Math.random() < 0.5;
         interaction.reply(
             {
              content: coin + "!",
