@@ -115,7 +115,7 @@ client.on('interactionCreate', async (interaction) => {
         const coin =  Math.random() < 0.5;
         interaction.reply(
             {
-             content: coin + "!",
+             content: (coin? "Heads" : "Tails") + "!",
              ephemeral: false
             }
         )
